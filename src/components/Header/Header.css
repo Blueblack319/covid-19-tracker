@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.header__title {
+  width: 60%;
+}
+
+.header__dropdown {
+  width: 120px;
+  height: fit-content;
+}

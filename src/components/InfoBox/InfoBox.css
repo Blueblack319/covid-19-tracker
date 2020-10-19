@@ -1,0 +1,21 @@
+.infoBox {
+  width: 100%;
+  padding: 10px;
+}
+
+.infoBox:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.infoBox__title {
+  color: #7f8c8d;
+}
+
+.infoBox__cases {
+  font-size: 1.75rem;
+}
+
+.infoBox__total {
+  font-size: 1.25rem;
+  color: #95a5a6;
+}
