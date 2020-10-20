@@ -5,13 +5,20 @@
 .table .table__title {
   font-weight: 600 !important;
   color: #7f8c8d !important;
+  margin-bottom: 10px;
 }
 
 .table .table__tableInfo {
   border-collapse: collapse;
   display: block;
+  width: 100%;
   height: 40vh;
   overflow: auto;
+}
+
+.table .table__tbody {
+  display: table;
+  width: 100%;
 }
 
 .table .table__country,
@@ -23,6 +30,11 @@
 .table .table__country {
   font-weight: 600;
   color: #34495e;
+}
+
+.table .table__row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .table .table__row:nth-of-type(odd) {

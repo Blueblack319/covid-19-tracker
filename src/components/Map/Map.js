@@ -18,12 +18,12 @@ const casesTypeColors = {
   },
   deaths: {
     color: "#bdc3c7",
-    multiplier: 1600,
+    multiplier: 1800,
   },
 };
 
-const showCircleAndInfo = (countries, casesType = "cases") =>
-  countries.map((country) => (
+const showCircleAndInfo = (countries, casesType) => {
+  return countries.map((country) => (
     <Circle
       key={country.country}
       center={[country.countryInfo.lat, country.countryInfo.long]}
@@ -54,6 +54,7 @@ const showCircleAndInfo = (countries, casesType = "cases") =>
       </Popup>
     </Circle>
   ));
+};
 
 function Map({ countries, casesType, center, zoom }) {
   return (

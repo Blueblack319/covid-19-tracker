@@ -1,0 +1,11 @@
+.lineGraph {
+  height: 45vh;
+  padding: 0 10px;
+}
+.lineGraph .lineGraph__title {
+  font-weight: 600 !important;
+  color: #7f8c8d !important;
+}
+.lineGraph .chartjs-render-monitor {
+  box-sizing: border-box;
+}

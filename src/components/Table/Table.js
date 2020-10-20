@@ -20,7 +20,7 @@ function Table({ countries }) {
         Live Cases by Country
       </Typography>
       <table className='table__tableInfo'>
-        <tbody>{tableInfo}</tbody>
+        <tbody className='table__tbody'>{tableInfo}</tbody>
       </table>
     </div>
   );

@@ -5,7 +5,7 @@
 - [x] Header
 - [x] Infoboxes
 - [x] Map
-- [ ] Table
+- [x] Table
 - [ ] LineGraph
 - [ ] styling
 - [ ] reponsive

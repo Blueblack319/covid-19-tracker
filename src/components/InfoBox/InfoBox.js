@@ -4,9 +4,9 @@ import numeral from "numeral";
 
 import "./InfoBox.css";
 
-function InfoBox({ cases, total, title }) {
+function InfoBox({ cases, total, title, clicked }) {
   return (
-    <Card className='infoBox'>
+    <Card className='infoBox' onClick={clicked}>
       <Typography variant='h6' className='infoBox__title'>
         {title}
       </Typography>
