@@ -4,7 +4,7 @@
 
 - [x] Header
 - [x] Infoboxes
-- [ ] Map
+- [x] Map
 - [ ] Table
 - [ ] LineGraph
 - [ ] styling
