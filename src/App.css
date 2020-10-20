@@ -9,11 +9,39 @@ body {
 
 .app {
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .app__right {
-  height: 100vh;
+  height: 95vh;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.app__infoContainer {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .app__infoContainer {
+    flex-direction: row;
+    margin: none;
+  }
+}
+
+@media (min-width: 990px) {
+  .app {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .app__left {
+    width: 70vw;
+    height: 100%;
+    margin-right: 10px;
+  }
 }

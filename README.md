@@ -8,4 +8,4 @@
 - [x] Table
 - [x] LineGraph
 - [x] styling
-- [ ] reponsive
+- [x] reponsive

@@ -40,3 +40,10 @@
 .infoBox__number--deaths {
   color: #bdc3c7;
 }
+
+@media (min-width: 640px) {
+  .infoBox:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
