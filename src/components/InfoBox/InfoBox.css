@@ -11,11 +11,32 @@
   color: #7f8c8d;
 }
 
-.infoBox__cases {
+.infoBox__number {
   font-size: 1.75rem;
+  font-weight: 600;
 }
 
 .infoBox__total {
   font-size: 1.25rem;
   color: #95a5a6;
+}
+
+.infoBox--cases--active {
+  border-top: 10px solid #ca0b2f;
+}
+.infoBox--recovered--active {
+  border-top: 10px solid #2ecc71;
+}
+.infoBox--deaths--active {
+  border-top: 10px solid #bdc3c7;
+}
+
+.infoBox__number--cases {
+  color: #ca0b2f;
+}
+.infoBox__number--recovered {
+  color: #2ecc71;
+}
+.infoBox__number--deaths {
+  color: #bdc3c7;
 }

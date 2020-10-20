@@ -87,18 +87,24 @@ function App() {
           total={infoData.cases}
           title='Coronavirus cases'
           clicked={handleInfoBoxClicked.bind(this, "cases")}
+          casesType='cases'
+          active={casesType === "cases"}
         />
         <InfoBox
           cases={infoData.todayRecovered}
           total={infoData.recovered}
           title='Recovered cases'
           clicked={handleInfoBoxClicked.bind(this, "recovered")}
+          casesType='recovered'
+          active={casesType === "recovered"}
         />
         <InfoBox
           cases={infoData.todayDeaths}
           total={infoData.deaths}
           title='Death cases'
           clicked={handleInfoBoxClicked.bind(this, "deaths")}
+          casesType='deaths'
+          active={casesType === "deaths"}
         />
         <Map
           center={mapCenter}

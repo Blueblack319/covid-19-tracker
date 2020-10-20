@@ -6,6 +6,6 @@
 - [x] Infoboxes
 - [x] Map
 - [x] Table
-- [ ] LineGraph
-- [ ] styling
+- [x] LineGraph
+- [x] styling
 - [ ] reponsive

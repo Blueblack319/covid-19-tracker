@@ -6,6 +6,8 @@
 
 .header__title {
   width: 60%;
+  color: #e74c3c;
+  font-weight: 600 !important;
 }
 
 .header__dropdown {

@@ -17,7 +17,7 @@ function Table({ countries }) {
   return (
     <div className='table'>
       <Typography variant='h5' className='table__title'>
-        Live Cases by Country
+        Total Cases by Country
       </Typography>
       <table className='table__tableInfo'>
         <tbody className='table__tbody'>{tableInfo}</tbody>

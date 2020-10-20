@@ -66,7 +66,7 @@ function LineGraph({ graphData, casesType }) {
   return (
     <div className='lineGraph'>
       <Typography variant='h5' className='lineGraph__title'>
-        Worldwide new cases
+        Worldwide new {casesType}
       </Typography>
       <Line
         options={options}
