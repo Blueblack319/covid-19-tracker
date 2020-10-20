@@ -33,7 +33,7 @@ const showCircleAndInfo = (countries, casesType = "cases") =>
       radius={
         Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
       }>
-      <Popup>
+      <Popup autoPan={false}>
         <div className='map__infoContainer'>
           <img
             className='infoContainer__flag'

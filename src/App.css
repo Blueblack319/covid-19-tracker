@@ -10,3 +10,8 @@ body {
 .app {
   margin: 10px;
 }
+
+.app__right {
+  height: 100vh;
+  margin-top: 10px;
+}

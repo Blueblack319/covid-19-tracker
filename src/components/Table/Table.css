@@ -1,0 +1,30 @@
+.table {
+  padding: 10px;
+}
+
+.table .table__title {
+  font-weight: 600 !important;
+  color: #7f8c8d !important;
+}
+
+.table .table__tableInfo {
+  border-collapse: collapse;
+  display: block;
+  height: 40vh;
+  overflow: auto;
+}
+
+.table .table__country,
+.table .table__cases {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.table .table__country {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.table .table__row:nth-of-type(odd) {
+  background-color: #ecf0f1;
+}

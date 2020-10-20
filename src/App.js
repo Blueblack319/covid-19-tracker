@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Card } from "@material-ui/core";
 
 import "./App.css";
 
@@ -6,6 +7,7 @@ import axios from "axios";
 import Header from "./components/Header/Header";
 import InfoBox from "./components/InfoBox/InfoBox";
 import Map from "./components/Map/Map";
+import Table from "./components/Table/Table";
 
 const BASE_URL = "https://disease.sh";
 
@@ -27,12 +29,13 @@ function App() {
         countries.push({
           name: country.country,
           code: country.countryInfo.iso2,
+          cases: country.cases,
         });
       });
       setCountries(countries);
       setMapCountries(res.data);
     });
-  }, [countries]);
+  }, []);
 
   useEffect(() => {
     const url =
@@ -43,7 +46,6 @@ function App() {
       method: "GET",
       url,
     }).then((res) => {
-      console.log(res.data);
       setInfoData(res.data);
       if (country !== "Worldwide") {
         setMapCenter([res.data.countryInfo.lat, res.data.countryInfo.long]);
@@ -86,7 +88,9 @@ function App() {
           casesType='cases'
         />
       </div>
-      <div className='app__right'></div>
+      <Card className='app__right'>
+        <Table countries={countries} />
+      </Card>
     </div>
   );
 }
